@@ -6,7 +6,7 @@ def respuesta(check):
  while True:
     try:
 
-     check= float('{:.2f}'.format(float(check))) 
+     check= float('{:.2f}'.format(float(check))) #Redondea a dos decimales la función en cuestión
      return check
     
     except ValueError:
