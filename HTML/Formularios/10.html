@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+        background-image: url(https://ih1.redbubble.net/image.1992579481.4007/flat,750x1000,075,f.jpg); /*dirección de la imagen */
+        background-repeat: no-repeat; /* para evitar la repetición de la imagen al no adecuar el tamaño de fondo de la página*/
+        background-size: 90% 100%; /*ajustar el tamaño de la imagen */
+        background-attachment: fixed;  /*si la pagina hiciese scroll la imagen se quedaria estática de fondo*/
+        }
+        h1{
+            text-align: center;
+        }
+    
+</style>
+
+</head>
+<body>
+    <h1>FORMULARIOS</h1>
+<fieldset>Formulario de comentarios
+    <label for="nombre">Ingrese su nombre:</label>
+    <input type="text" name="nombre" id="nombre"><br>
+    <label for="email">Ingrese su email:</label>
+    <input type="text" name="email" id="email"><br>
+    <label for="comentario">Comentario:</label><br>
+    <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea><br>
+</fieldset>
+    <input type="submit" value="Enviar">
+    
+</body>
+</html>

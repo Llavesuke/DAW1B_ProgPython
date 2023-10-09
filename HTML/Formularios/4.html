@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+        background-image: url(https://ih1.redbubble.net/image.1992579481.4007/flat,750x1000,075,f.jpg); /*dirección de la imagen */
+        background-repeat: no-repeat; /* para evitar la repetición de la imagen al no adecuar el tamaño de fondo de la página*/
+        background-size: 90% 100%; /*ajustar el tamaño de la imagen */
+        background-attachment: fixed;  /*si la pagina hiciese scroll la imagen se quedaria estática de fondo*/
+        }
+        h1{
+            text-align: center;
+        }
+    
+</style>
+</head>
+<body>
+    <form action="/resultado.php">
+        <h1><b>FORMULARIO</b></h1>
+        <label for="nombre">Apellidos y nombre:</label>
+        <input type="text" name="nombre" id="nombre"><br>
+        <p>Es mayor de edad?</p>
+        <input type="radio" id="si" name="mayoredad">
+        <label for="si">Si</label><br>
+        <input type="radio" id="no" name="mayoredad">
+        <label for="no">No</label><br><br>
+        <label for="telefono">Telefono:</label>
+        <input type="text" name="telefono" id="telefono" value="453-"><br><br>
+        <textarea name="comentarios" cols="40" rows="10"> Ingrese aqui sus comentarios </textarea><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>
