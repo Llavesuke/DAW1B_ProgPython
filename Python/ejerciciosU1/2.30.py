@@ -29,18 +29,22 @@ print('------------------')
 inicio= int(input('Numero de inicio de la serie -> '))
 incremento= int(input('Cada cuanto incrementara la serie -> '))
 total= int(input('Con que numero acabara la serie -> '))
-
+contador= 0
 
 while incremento < 0 or total < 0:
     incremento= int(input('\nCada cuanto incrementara la serie -> '))
     total= int(input('Con que numero acabara la serie -> '))
 
-frase= 'Serie -> '
+print('\nSerie ->'+str(inicio)+'-',end='')
+while contador != total-2:
+        contador += 1
+        inicio += incremento
+        print(inicio, end='')
+        if contador != total-2:
+            print('...', end='')
 
-while inicio < total:
-    print(frase , inicio , '...')
-    if inicio >= total:
-        print('-', end='')
-    inicio += incremento
-    
+print('-', end='')
+inicio += incremento
+print(inicio, end='')
+
 print('\n')
