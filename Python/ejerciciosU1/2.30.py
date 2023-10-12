@@ -7,6 +7,7 @@ Inicio
     Lee incremento
     Escribe 'Numero total de la serie -> '
     Escribe total
+    contador=0
 
     Mientras incremento < 0 o total < 0 hacer
         Escribe 'Introduce un numero de incremento valido -> '
@@ -14,9 +15,16 @@ Inicio
         Escribe 'Introduce un numero total de la serie -> '
         Lee total
 
+    Escribe 'Serie' + inicio + '-'
+    Mientras contador != total-2 hacer
+        contador= contador + 1
+        inicio = incremento + 1
+        Si contador != 2 entonces
+            Escribe '...'
 
-    Mientras inicio < total+1
-        Escribe 'inicio = "incremento" + 1'
+Escribe '-'
+inicio = inicio + incremento
+Escribe 'inicio'
 
 
 Fin
