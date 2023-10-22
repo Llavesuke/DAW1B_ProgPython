@@ -29,7 +29,8 @@ def suma_de_piramides(num:int):
                 if contadorInterno != contadorglobal:
                     lista+= '+'
                 contadorInterno-=1
-            returnText+=f"{contadorInterno+1} = {lista} = -{resultado}\n"
+            returnText+=f"{contadorInterno+1} = {lista} = -{resultado}\n" #ContadorInterno se suma uno para mostrar el valor correcto, ya que sino 
+                                                                          #mostraria el valor que estamos tratando pero con una unidad de más
             contadorglobal-= 1
             contadorInterno=0
             lista=''
