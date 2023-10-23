@@ -15,6 +15,7 @@ def suma_de_piramides(num:int):
                 lista+= '+'
             contadorInterno+=1 #Se va sumando uno al contadorInterno hasta que llegue al valor de num
         returnText+=f"{num} = {lista} = {resultado}\n" #Se suma a la variable returnText que despues se mostrara a la hora de llamar la función
+
         lista= ''
         num-= 1
         contadorglobal-=1
@@ -31,7 +32,7 @@ def suma_de_piramides(num:int):
                 contadorInterno-=1
             returnText+=f"{contadorInterno+1} = {lista} = -{resultado}\n" #ContadorInterno se suma uno para mostrar el valor correcto, ya que sino 
                                                                           #mostraria el valor que estamos tratando pero con una unidad de más
-            contadorglobal-= 1
+            contadorglobal-= 1 #Reset de valores
             contadorInterno=0
             lista=''
             resultado=0

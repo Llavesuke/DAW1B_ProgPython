@@ -1,4 +1,4 @@
-from test_prueba1 import suma_de_piramides
+from funcion import suma_de_piramides
 
 
 num= int(input('->'))
